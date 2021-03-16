@@ -1,0 +1,84 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "patient.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 1000,
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 4
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "first_name",
+          "last_name",
+          "mpi"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "BasicSuiteBuilderProfiler": {
+      "batch_kwargs": {
+        "data_asset_name": "patient",
+        "datasource": "pg",
+        "limit": 1000,
+        "schema": "public",
+        "table": "patient"
+      },
+      "created_at": 1615691085.2502556,
+      "created_by": "BasicSuiteBuilderProfiler"
+    },
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "patient",
+          "datasource": "pg",
+          "limit": 1000,
+          "schema": "public",
+          "table": "patient"
+        },
+        "batch_markers": {
+          "ge_load_time": "20210314T030445.206726Z"
+        },
+        "batch_parameters": null,
+        "citation_date": "20210314T030445.270060Z",
+        "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
+      }
+    ],
+    "columns": {
+      "first_name": {
+        "description": ""
+      },
+      "id": {
+        "description": ""
+      },
+      "last_name": {
+        "description": ""
+      },
+      "mpi": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.13.8",
+    "notes": {
+      "content": [
+        "#### This is an _example_ suite\n\n- This suite was made by quickly glancing at 1000 rows of your data.\n- This is **not a production suite**. It is meant to show examples of expectations.\n- Because this suite was auto-generated using a very basic profiler that does not know your data like you do, many of the expectations may not be meaningful.\n"
+      ],
+      "format": "markdown"
+    }
+  }
+}

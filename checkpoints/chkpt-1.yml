@@ -1,0 +1,9 @@
+name: chkpt-1
+config_version: 1
+class_name: SimpleCheckpoint
+validations:
+  - batch_request:
+      datasource_name: pg
+      data_connector_name: pg_connector
+      data_asset_name: patient
+    expectation_suite_name: patient.warning
