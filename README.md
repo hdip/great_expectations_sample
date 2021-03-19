@@ -4,7 +4,7 @@ Great expectations sample project with postgresql
 Expects (Ofcourse you can update to your setup in uncommitted/config_variables.yml)
 - postgresql running on port 5434;
 - environment variable POSTGRES_PASSWORD; You can do this in non-windows OS ```export POSTGRES_PASSWORD=****```
-- table called patient with definition as below 
+- db called test & table called patient with definition as below 
 ```
                         Table "public.patient"
    Column   |          Type          | Collation | Nullable | Default 
