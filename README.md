@@ -1,7 +1,9 @@
 # great_expectations_sample
 Great expectations sample project with postgresql
 
-Run with python /path/to/chkpt-1.py
+Using a command line parameter to supply the table/ view name. Can be used to create a dynamic command at runtime
+
+Run with ```python /path/to/uncommitted/chkpt-1.py patient```
 
 This also created the docs and results
 
