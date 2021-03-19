@@ -7,10 +7,6 @@ Run with ```python /path/to/uncommitted/chkpt-1.py patient```
 
 This also created the docs and results
 
-For any ge cli seems you have to be one folder above the ge folder and the name of top folder has to be great_expectations
-
-```cd .. && mv great_expectations_sample great_expectations```
-
 The notebooks dont work  probably  due to using SimpleSqlAlchemy datasource and not the v2 SqlAlchemydatasource
 
 ```great_expectations suite edit patient.warning```
